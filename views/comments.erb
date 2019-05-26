@@ -1,0 +1,16 @@
+<h2> Comments </h2>
+<a href="/comments/new">Create a new Comment</a>
+<br>
+<br>
+<h3> List of Comments </h3>
+<%if @comments.any?%>
+  <ul>
+    <%@comments.each do |comment|%>
+      <li> <a href="/comments/<%=comment.cid%>"><%=comment.comment%> <%= comment.created_at %> </a> </li>
+      <br>
+      <br>
+    <%end%>
+  </ul>
+<%else%>
+  <p> No Comments have been created yet! </p>
+<%end%>

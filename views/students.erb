@@ -1,0 +1,16 @@
+<h2> Students </h2>
+<a href="/students/new">Create a new Student Record</a>
+<br>
+<br>
+<h3> List of Students </h3>
+<%if @students.any?%>
+  <ul>
+    <%@students.each do |student|%>
+      <li> <a href="/students/<%=student.id%>"><%=student.firstname%> <%=student.lastname%></a> </li>
+      <br>
+      <br>
+    <%end%>
+  </ul>
+<%else%>
+  <p> No Student Records have been created yet! </p>
+<%end%>
