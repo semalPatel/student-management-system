@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     backports (3.8.0)
     daemons (1.2.4)
     data_objects (0.10.17)
@@ -39,7 +39,7 @@ GEM
     multi_json (1.12.1)
     mustermann (1.0.0)
     pg (0.20.0)
-    public_suffix (2.0.5)
+    public_suffix (5.0.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
